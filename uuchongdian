@@ -1,0 +1,6 @@
+const body = JSON.parse($request.body);
+
+body.fixMoney = 8;
+body.money = 1;
+
+$done({body: JSON.stringify(body)});
