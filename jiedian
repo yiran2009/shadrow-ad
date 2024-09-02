@@ -1,0 +1,22 @@
+[general]
+skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 127.0.0.1/8
+dns-server = system, 1.1.1.1, 8.8.8.8
+tun-excluded-routes = 10.0.0.0/8, 127.0.0.1/8
+
+[policy]
+static = direct, proxy, block
+
+[server_remote]
+vmess, 104.21.238.65, 2082, username=86e926b9-d67a-4c8f-a35e-024631838a45, over-tls=false, tls-host=xray1.2413762.xyz, obfs=wss, obfs-uri=/github.com/Alvin9999, group=V2Ray
+
+[filter_remote]
+
+[filter_local]
+
+[rewrite_remote]
+
+[rewrite_local]
+
+[mitm]
+
+[task_local]
